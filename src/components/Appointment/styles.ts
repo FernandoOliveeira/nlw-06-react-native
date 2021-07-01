@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
-  playersInfo: {
+  playerInfo: {
     flexDirection: 'row',
     alignItems: 'center',
   },
@@ -61,4 +61,14 @@ export const styles = StyleSheet.create({
     marginLeft: 7,
     marginRight: 24,
   },
+
+  guildIconContainer: {
+    width: 66,
+    height: 70,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 20
+
+  }
 })

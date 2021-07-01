@@ -1,14 +1,28 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
+import { useAuth } from '../../hooks/auth';
+
 import { styles } from './styles';
 import { Avatar } from '../Avatar';
 
 export function Profile() {
+  const { user } = useAuth();
+
+  const phrases = [
+    'Hoje é dia de vitória',
+    'Jamais tiltarei',
+    'Jogaremos com o coração'
+  ]
+
+  function randomPhrase() {
+    return Math.floor(Math.random() * phrases.length);
+  }
+
   return (
     <View style={styles.container}>
 
-      <Avatar urlImage="https://github.com/FernandoOliveeira.png" />
+      <Avatar urlImage={user.avatar} />
 
       <View>
         <View style={styles.user}>
@@ -17,12 +31,12 @@ export function Profile() {
           </Text>
 
           <Text style={styles.username}>
-            Fernando
+            {user.firstName}
           </Text>
         </View>
 
         <Text style={styles.message}>
-          Hoje é dia de vitória
+          {phrases[randomPhrase()]}
         </Text>
       </View>
 

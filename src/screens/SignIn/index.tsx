@@ -1,38 +1,41 @@
 import React from 'react';
-import { Text, View, Image, ScrollView } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { Text, View, Image, ScrollView, Alert, ActivityIndicator } from 'react-native';
 
+import { useAuth } from '../../hooks/auth';
+
+import IllustrationImg from '../../assets/illustration.png';
+import { theme } from '../../global/styles/theme';
 import { styles } from './styles';
-import Illustration from '../../assets/illustration.png';
 
 import { ButtonIcon } from '../../components/ButtonIcon';
 import { Background } from '../../components/Background';
 
-
 export function SignIn() {
-  const navigation = useNavigation();
+  const { loading, signIn } = useAuth();
 
-  function handleSignIn() {
-    navigation.navigate('Home');
-
+  async function handleSignIn() {
+    try {
+      await signIn();
+    } catch (error) {
+      Alert.alert(error);
+    }
   }
 
   return (
-
     <Background>
-      <View style={styles.container}>
-        <ScrollView style={{ width: '100%' }}>
+      <ScrollView style={{ width: '100%' }}>
+        <View style={styles.container}>
           <Image
-            source={Illustration}
+            source={IllustrationImg}
             style={styles.image}
             resizeMode="stretch"
-
           />
+
           <View style={styles.content}>
             <Text style={styles.title}>
-              Conecte-se{'\n'}
-              e organize suas{'\n'}
-              jogatinas{'\n'}
+              Conecte-se {'\n'}
+              e organize suas {'\n'}
+              jogatinas
             </Text>
 
             <Text style={styles.subtitle}>
@@ -40,15 +43,16 @@ export function SignIn() {
               favoritos com seus amigos
             </Text>
 
-            <ButtonIcon
-              title='Entrar com o Discord'
-              activeOpacity={.7}
-              onPress={handleSignIn}
-            />
+            {
+              loading ? <ActivityIndicator color={theme.colors.primary} /> :
+                <ButtonIcon
+                  title="Entrar com Discord"
+                  onPress={handleSignIn}
+                />
+            }
           </View>
-
-        </ScrollView>
-      </View>
+        </View>
+      </ScrollView>
     </Background>
   );
 }

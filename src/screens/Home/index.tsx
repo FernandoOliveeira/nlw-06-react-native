@@ -80,28 +80,25 @@ export function Home() {
         />
 
         {/* Content */}
-        <View style={styles.content}>
-          <ListHeader
-            title="Partidas Agendadas"
-            subtitle="total 6"
-          />
+        <ListHeader
+          title="Partidas Agendadas"
+          subtitle="total 6"
+        />
+        <FlatList
+          data={appointments}
+          keyExtractor={item => item.id}
+          renderItem={({ item }) => (
+            <Appointment
+              data={item}
+              onPress={handleAppointmentDetails}
+            />
 
-          <FlatList
-            data={appointments}
-            keyExtractor={item => item.id}
-            renderItem={({ item }) => (
-              <Appointment
-                data={item}
-                onPress={handleAppointmentDetails}
-              />
-
-            )}
-            style={styles.matches}
-            showsVerticalScrollIndicator={false}
-            ItemSeparatorComponent={() => <ListDivider />}
-
-          />
-        </View>
+          )}
+          style={styles.matches}
+          showsVerticalScrollIndicator={false}
+          ItemSeparatorComponent={() => <ListDivider />}
+          contentContainerStyle={{ paddingBottom: 69 }}
+        />
       </View>
     </Background>
   );
