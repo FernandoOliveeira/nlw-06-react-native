@@ -1,18 +1,35 @@
 import React from 'react';
-import { Text, Image } from 'react-native';
+import { View, Image } from 'react-native';
 
 import { styles } from './styles';
+import DiscordSvg from '../../assets/discord.svg';
 
+const { CDN_IMAGE } = process.env;
 
-export function GuildIcon() {
-  const uri = 'https://e7.pngegg.com/pngimages/448/735/png-clipart-silhouette-of-mask-illustration-discord-computer-icons-logo-user-others-miscellaneous-angle.png';
+type Props = {
+  guildId: string;
+  iconId: string | null;
+}
+
+export function GuildIcon({ guildId, iconId }: Props) {
+  const uri = `${CDN_IMAGE}/icons/${guildId}/${iconId}.png`;
 
   return (
-    <Image
-      style={styles.image}
-      source={{ uri }}
-      resizeMode="cover"
+    <View style={styles.container}>
+      {
+        iconId
+          ? < Image
+            style={styles.image}
+            source={{ uri }}
+            resizeMode="cover"
+          />
+          : <DiscordSvg
+            width={40}
+            height={40}
+          />
 
-    />
+
+      }
+    </View>
   );
 }
