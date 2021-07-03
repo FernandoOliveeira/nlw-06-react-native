@@ -78,7 +78,7 @@ export function Home() {
               {/* Content */}
               < ListHeader
                 title="Partidas Agendadas"
-                subtitle="total 6"
+                subtitle={`total ${appointments.length}`}
               />
               <FlatList
                 data={appointments}
