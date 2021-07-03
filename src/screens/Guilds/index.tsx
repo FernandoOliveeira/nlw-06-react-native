@@ -18,6 +18,7 @@ export function Guilds({ handleGuildSelect }: Props) {
   const [loading, setLoading] = useState(true);
 
   async function fetchGuilds() {
+    // List all servers from the user discord
     const response = await api.get('/users/@me/guilds');
 
     setGuilds(response.data);
