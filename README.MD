@@ -54,7 +54,7 @@ After that, the app will redirect to the Home screen, where the metting will app
 If you click on the appointment, the details screen will appear, where all the informations are shown. <br>
 On the top-right of the screen is the Share button, by clicking on it, will be able to share a invite to the discord server.
 On the bottom of the screen are the "Entrar na partida" button, click on it to be redirected to the discord app, direct on the server where the metting is scheduled.  
-You can see the full app-map [here](https://www.figma.com/file/sPdxmchYc26xrHxcVVfWX3/GamePlay---NLW-Together)
+You can see the full app-map [here](https://www.figma.com/file/sPdxmchYc26xrHxcVVfWX3/GamePlay---NLW-Together).
 
 # :hammer_and_wrench: Technologies
 The following tools were used in this project:
