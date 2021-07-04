@@ -58,11 +58,17 @@ On the bottom of the screen are the "Entrar na partida" button, click on it to b
 The following tools were used in this project:
 - [Async Storage](https://github.com/react-native-async-storage/async-storage)
 - [Axios](https://github.com/axios/axios) 
-- [babel-plugin-inline-dotenv](https://github.com/brysgo/babel-plugin-inline-dotenv#readme)
+- [babel-plugin-inline-dotenv](https://github.com/brysgo/babel-plugin-inline-dotenv)
+- [Dotenv](https://github.com/motdotla/dotenv)
 - [Expo](https://docs.expo.io/)
+- [Expo App Loading](https://docs.expo.io/versions/latest/sdk/app-loading/)
 - [Expo Auth Session](https://docs.expo.io/versions/latest/sdk/auth-session/)
 - [Expo Fonts](https://docs.expo.io/versions/latest/sdk/font/)
 - [Google fonts](https://fonts.google.com/)
 - [React Native](https://reactnative.dev/)
+- [React Native Iphone X Helper](https://github.com/ptelad/react-native-iphone-x-helper)
+- [React Native SVG](https://github.com/react-native-svg/react-native-svg)
+- [React Native UUID](https://github.com/eugenehp/react-native-uuid)
+- [Stack Navigation](https://reactnative.dev/docs/navigation#usage)
 
 
