@@ -1,6 +1,7 @@
+# Next Level Week #06 #Together [@Rocketseat](https://github.com/Rocketseat) 🚀
+
 <img src="./assets/wallpaper.png"/>
 
-# Next Level Week #06 #Together [@Rocketseat](https://github.com/Rocketseat) 🚀
 ## App to schedule gameplays with your friends 🎮
 
 :white_check_mark: Content Table
@@ -66,6 +67,7 @@ The following tools were used in this project:
 - [Expo Fonts](https://docs.expo.io/versions/latest/sdk/font/)
 - [Google fonts](https://fonts.google.com/)
 - [React Native](https://reactnative.dev/)
+- [React Native Gesture Handler](https://docs.expo.io/versions/latest/sdk/gesture-handler/)
 - [React Native Iphone X Helper](https://github.com/ptelad/react-native-iphone-x-helper)
 - [React Native SVG](https://github.com/react-native-svg/react-native-svg)
 - [React Native UUID](https://github.com/eugenehp/react-native-uuid)
