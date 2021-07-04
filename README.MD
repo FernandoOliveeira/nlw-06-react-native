@@ -47,13 +47,14 @@ Once the environment variables are proberly set, run the command:
 # :computer: How To Use
 The usage is very simple. <br>
 First login with your discord account.<br>
-Then click on **plus** button on the top-right of the screen.<br>
+Then click on **plus** button on the top-right of the screen.<br>  
 The schedule screen will appear, choose a category, select a discord server where the metting will happen, set day and time, 
 write a description then click "Agendar" to save. <br>
-After that, the app will redirect to the Home screen, where the metting will appear on a list. <br>
+After that, the app will redirect to the Home screen, where the metting will appear on a list. <br>  
 If you click on the appointment, the details screen will appear, where all the informations are shown. <br>
 On the top-right of the screen is the Share button, by clicking on it, will be able to share a invite to the discord server.
-On the bottom of the screen are the "Entrar na partida" button, click on it to be redirected to the discord app, direct on the server where the metting is scheduled.
+On the bottom of the screen are the "Entrar na partida" button, click on it to be redirected to the discord app, direct on the server where the metting is scheduled.  
+You can see the full app-map [here](https://www.figma.com/file/sPdxmchYc26xrHxcVVfWX3/GamePlay---NLW-Together)
 
 # :hammer_and_wrench: Technologies
 The following tools were used in this project:
